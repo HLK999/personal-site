@@ -18,19 +18,16 @@ body {
     opacity: 0.5;
 }
 
-#treatise {
-    color: red;
-    font-size: 30px;
+div, span {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border: 5px solid orange;
 }
 
-em, b {
-    display: block;
-}
-
-li {
+span {
     display: inline-block;
 }
-
 
 
 
