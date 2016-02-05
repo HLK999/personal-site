@@ -19,10 +19,9 @@ body {
 }
 
 div, span {
-    height: 50px;
-    width: 50px;
     background-color: red;
     border: 5px solid orange;
+    padding: 0px;
 }
 
 span {
