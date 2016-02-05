@@ -18,12 +18,9 @@ body {
     opacity: 0.5;
 }
 
-#the-coolest {
-    color: lightblue;
-}
-
-.cool {
-    color: green;
+#treatise {
+    color: red;
+    font-size: 30px;
 }
 
 
