@@ -39,6 +39,11 @@ nav li {
     margin: 0px 22px;
 }
 
+#writings {
+    position: relative;
+    top: 5px;
+}
+
 
 /*#background {
     position: fixed;
