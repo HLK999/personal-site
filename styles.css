@@ -40,7 +40,7 @@ nav li {
 }
 
 #writings {
-    position: relative;
+    position: fixed;
     top: 5px;
 }
 
