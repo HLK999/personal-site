@@ -17,11 +17,12 @@ body {
     background-color: white;
     opacity: 0.5;
 }
-p {
+
+#the-coolest {
     color: lightblue;
 }
 
-p {
+.cool {
     color: green;
 }
 
