@@ -23,6 +23,14 @@ body {
     font-size: 30px;
 }
 
+em, b {
+    display: block;
+}
+
+li {
+    display: inline-block;
+}
+
 
 
 
