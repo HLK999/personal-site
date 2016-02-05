@@ -20,18 +20,23 @@ body {
 
 ul {
     list-style-type: none;
+    padding: 20px;
+    margin: 0px;
 }
 
 li {
     display: inline-block;
 }
 
-nav, ul, li {
-    border: 1px solid red;
-}
-
 nav {
     text-align: center;
+    background-color: rgba(240,229,182,0.3);
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 22px;
+}
+
+nav li {
+    margin: 0px 22px;
 }
 
 
