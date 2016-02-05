@@ -17,6 +17,16 @@ body {
     background-color: white;
     opacity: 0.5;
 }
+p {
+    color: lightblue;
+}
+
+p {
+    color: green;
+}
+
+
+
 
 /*#background {
     position: fixed;
