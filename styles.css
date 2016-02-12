@@ -14,8 +14,7 @@ body {
     width: 25%;
     right: 3%;
     bottom: 4%;
-    background-color: white;
-    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 ul {
@@ -39,9 +38,14 @@ nav li {
     margin: 0px 22px;
 }
 
-#writings {
-    position: fixed;
-    top: 5px;
+#circle {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
 }
 
 
