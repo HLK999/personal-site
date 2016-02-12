@@ -5,16 +5,7 @@ body {
     background-image: url("images/backgroundcroc.jpg");
     background-size: cover;
     background-position: 0 25%;
-}
-
-#personal-info {
-    /*border: 1px solid red;*/
-    height: 50%;
-    position: fixed;
-    width: 25%;
-    right: 3%;
-    bottom: 4%;
-    background-color: rgba(255, 255, 255, 0.5);
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
 
 ul {
@@ -30,13 +21,36 @@ li {
 nav {
     text-align: center;
     background-color: rgba(240,229,182,0.3);
-    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-size: 22px;
 }
 
 nav li {
     margin: 0px 22px;
 }
+
+#personal-info {
+    /*border: 1px solid red;*/
+    height: 50%;
+    position: fixed;
+    width: 25%;
+    right: 3%;
+    bottom: 4%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+#personal-info h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: -7px;
+}
+
+#skills {
+    font-size: 16px;
+    position: relative;
+    right: 3px;
+}
+
 
 
 
