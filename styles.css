@@ -38,15 +38,6 @@ nav li {
     margin: 0px 22px;
 }
 
-#circle {
-    height: 30px;
-    width: 30px;
-    background-color: red;
-    border-radius: 100%;
-    position: absolute;
-    bottom: 5%;
-    left: 15%;
-}
 
 
 /*#background {
