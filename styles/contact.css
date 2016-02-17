@@ -1,15 +1,16 @@
 body {
     background-color: grey;
     background-image: none;
+    text-align: center;
 }
 
 header {
-    text-align: center;
     margin-top: 45px;
     font-size: 30px;
 }
 
 #contact-info {
+    text-align: left;
     margin-left: 50px;
 }
 
@@ -24,7 +25,6 @@ header {
 
 footer {
     position: fixed;
-    bottom: 20px;
-    text-align: center;
+    bottom: 40px;
     width: 100%;
 }
