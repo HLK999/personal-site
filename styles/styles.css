@@ -2,7 +2,7 @@ body {
     background-color: beige;
     margin: 0;
     padding: 0;
-    background-image: url("images/backgroundcroc.jpg");
+    background-image: url("../images/backgroundcroc.jpg");
     background-size: cover;
     background-position: 0 25%;
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
