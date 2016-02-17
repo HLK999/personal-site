@@ -18,6 +18,16 @@ li {
     display: inline-block;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a:active {
+    color: white;
+}
+
 nav {
     text-align: center;
     background-color: rgba(240,229,182,0.3);
