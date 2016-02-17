@@ -23,8 +23,16 @@ header {
     text-decoration: underline;
 }
 
+#images {
+    height: 350px;
+    width: 100%;
+    text-align: center;
+}
+
 img {
-    opacity: 0.5;
+    position: relative;
+    opacity: 0;
+    display: none;
     border-radius: 5px;
     -moz-box-shadow: 5px 5px 5px #555555;
     -webkit-box-shadow: 5px 5px 5px #555555;
