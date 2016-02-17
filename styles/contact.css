@@ -2,3 +2,24 @@ body {
     background-color: grey;
     background-image: none;
 }
+
+header {
+    text-align: center;
+    margin-top: 45px;
+    font-size: 30px;
+}
+
+#contact-info {
+    margin-left: 50px;
+}
+
+#contact-info p {
+    margin: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
