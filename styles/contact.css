@@ -17,6 +17,11 @@ header {
     margin: 0;
 }
 
+#contact-info #e-mail {
+    margin-top: 12px;
+    text-decoration: underline;
+}
+
 footer {
     position: fixed;
     bottom: 20px;
