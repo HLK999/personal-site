@@ -11,7 +11,7 @@ nav {
 #contact-info {
     text-align: left;
     margin-left: 50px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #contact-info p {
@@ -37,10 +37,11 @@ img {
     -moz-box-shadow: 5px 5px 5px #555555;
     -webkit-box-shadow: 5px 5px 5px #555555;
     box-shadow: 5px 5px 5px #555555;
+    top: -20px;
 }
 
 footer {
     position: fixed;
-    bottom: 40px;
+    bottom: 20px;
     width: 100%;
 }
