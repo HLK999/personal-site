@@ -1,0 +1,1116 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red47\green180\blue29;\red180\green36\blue25;\red46\green174\blue187;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 Last login: Wed Feb 17 09:32:02 on console\
+hope@hopekillcoyne ~ $ pwd\
+/Users/hope\
+hope@hopekillcoyne ~ $ ls\
+All GA file copies perhaps	books\
+Applications			copy_of_jokes\
+Desktop				file03\
+Documents			fundamentals\
+Downloads			funny_things\
+Dropbox				heroku_practice\
+FETCH_HEAD			hw_test\
+GitHub				in_class\
+Google Drive			jokes\
+Images				my-favorite-things\
+Incompatible Software		my_new_dir\
+JD-Salinger			my_other_dir\
+Labs				mydir1\
+Library				mydir2\
+Movies				mydir3\
+Music				new_git\
+Pictures			new_repo\
+Public				new_repo1\
+Sites				node_modules\
+WDI				rubiess\
+World				workspace\
+hope@hopekillcoyne ~ $ cd WDI/\
+hope@hopekillcoyne WDI $ ls\
+ calendar_demo.js\
+10.19.15 Git Commit Process with David copy 2.rtf\
+2.9.16 bash.rtf\
+ConfigurableRB copy.rtf\
+DaveKoenig\
+DoubtingBen copy.rtf\
+Framed.rtf\
+FramedSaved 12.18.15.rtf\
+FrontEnd_Class\
+Heroku again copy.rtf\
+IRememberLlama_folder\
+Libraries_and_Frameworks\
+Node_prompt_template.js\
+On my Own\
+RailsTerminal copy.rtf\
+Screen Shot 2015-11-12 at 9.49.01 PM.png\
+Syed\
+WDI_Tomato\
+YDKJS\
+_git_along copy.rtf\
+calendar_demo.html\
+d_01 Node saved 10.1.15 copy.txt\
+personal-site\
+site\
+something\
+hope@hopekillcoyne WDI $ cd personal-site/\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ atom .\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   index.html\cf0 \
+	\cf3 modified:   styles.css\cf0 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf3 Personal Site Bash closed 2.17.16.rtf\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git diff\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+:\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+\cf2 +            <li>Contrary to popular belief, Lorem Ipsum is not simply random te\cf0 :\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+\cf2 +            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in V\cf0 :\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+\cf2 +            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum\cf0 :\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+\cf2 +            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the\cf0 :\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+\cf2 +            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This boo\cf0 :\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+\cf2 +            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a \cf0 :\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+\cf2 +            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line o\cf0 :\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+\cf2 +            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "L</li>\cf0 \
+:\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+\cf2 +            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "L</li>\cf0 \
+\cf2 +        </ul>\cf0 \
+:\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+\cf2 +            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "L</li>\cf0 \
+\cf2 +        </ul>\cf0 \
+     </div>\
+ </body>\
+:\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+\cf2 +            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "L</li>\cf0 \
+\cf2 +        </ul>\cf0 \
+     </div>\
+ </body>\
+ </html>\
+:\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+\cf2 +            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "L</li>\cf0 \
+\cf2 +        </ul>\cf0 \
+     </div>\
+ </body>\
+ </html>\
+:\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+\cf2 +            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "L</li>\cf0 \
+\cf2 +        </ul>\cf0 \
+     </div>\
+ </body>\
+ </html>\
+:\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+\cf2 +            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "L</li>\cf0 \
+\cf2 +        </ul>\cf0 \
+     </div>\
+ </body>\
+ </html>\
+
+\f1\b diff --git a/styles.css b/styles.css
+\f0\b0 \
+:\
+
+\f1\b diff --git a/index.html b/index.html
+\f0\b0 \
+
+\f1\b index 308396a..c1f4a62 100644
+\f0\b0 \
+
+\f1\b --- a/index.html
+\f0\b0 \
+
+\f1\b +++ b/index.html
+\f0\b0 \
+\cf4 @@ -18,12 +18,21 @@\cf0 \
+     <!-- <img id="background" src="images/silent_roar_bg.jpg" alt=""> -->\
+     <div id="personal-info">\
+         <h2>Hope Lourie Killcoyne</h2>\
+\cf3 -        <ul id="skills"> \cf0 \
+\cf2 +        <ul id="skills">\cf0 \
+             <li>Photographer |</li>\
+             <li>Writer |</li>\
+             <li>Editor</li>\
+             <li>Web Developer</li>\
+         </ul>\
+\cf2 +        <ul id="tidbits">\cf0 \
+\cf2 +            <li id="title">Favorite Book:</li><br><span><ital>\cf0 \
+\cf2 +                <a href="http://www.amazon.com/The-Dot-Line-Romance-Mathematics/dp/1587170663" target="_blank">\cf0 \
+\cf2 +                    The Dot and the Line\cf0 \
+\cf2 +                </li></a><br>\cf0 \
+\cf2 +            </ital>by Norton Juster</span>\cf0 \
+\cf2 +            <li id="title">Second-favorite City: London</li>\cf0 \
+\cf2 +            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "L</li>\cf0 \
+\cf2 +        </ul>\cf0 \
+     </div>\
+ </body>\
+ </html>\
+
+\f1\b diff --git a/styles.css b/styles.css
+\f0\b0 \
+
+\f1\b index 2e56778..92cf5ce 100644
+\f0\b0 \
+
+\f1\b --- a/styles.css
+\f0\b0 \
+
+\f1\b +++ b/styles.css
+\f0\b0 \
+\cf4 @@ -26,6 +26,7 @@\cf0  nav \{\
+ \
+ nav li \{\
+     margin: 0px 22px;\
+\cf2 +    top-padding: 16px;\cf0 \
+ \}\
+ \
+ #personal-info \{\
+\cf4 @@ -37,8 +38,10 @@\cf0  nav li \{\
+     bottom: 4%;\
+     background-color: rgba(255, 255, 255, 0.5);\
+     text-align: center;\
+\cf2 +    overflow-y: scroll;\cf0 \
+ \}\
+ \
+\cf2 +\cf0 \
+ #personal-info h2 \{\
+     font-size: 24px;\
+     font-weight: normal;\
+\cf4 @@ -49,8 +52,29 @@\cf0  nav li \{\
+     font-size: 16px;\
+     position: relative;\
+     right: 3px;\
+\cf2 +    padding-bottom: 0px;\cf0 \
+\cf2 +    margin-bottom: 0px;\cf0 \
+ \}\
+ \
+\cf2 +#tidbits\{\cf0 \
+\cf2 +    font-size: 16px;\cf0 \
+\cf2 +    text-align: left;\cf0 \
+\cf2 +        padding-bottom: 16px;\cf0 \
+\cf2 +\}\cf0 \
+\cf2 +\cf0 \
+\cf2 +#title\{\cf0 \
+\cf2 +    font-variant: small-caps;\cf0 \
+\cf2 +    font-size: 20px;\cf0 \
+\cf2 +    text-align: left;\cf0 \
+\cf2 +    padding-bottom: 6px;\cf0 \
+\cf2 +    padding-top: 6px;\cf0 \
+\cf2 +\}\cf0 \
+\cf2 +\cf0 \
+\cf2 +span\{\cf0 \
+\cf2 +    padding: v;\cf0 \
+\cf2 +\}\cf0 \
+\cf2 +\cf0 \
+\cf2 +\cf0 \
+ \
+ \
+ \
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   index.html\cf0 \
+	\cf3 modified:   styles.css\cf0 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf3 Personal Site Bash closed 2.17.16.rtf\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git add .\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit\
+Aborting commit due to empty commit message.\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -m "Greeking and a few tweaks"\
+[master abfdb23] Greeking and a few tweaks\
+ 3 files changed, 953 insertions(+), 1 deletion(-)\
+ create mode 100644 Personal Site Bash closed 2.17.16.rtf\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git push\
+Counting objects: 9, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (9/9), done.\
+Writing objects: 100% (9/9), 4.99 KiB | 0 bytes/s, done.\
+Total 9 (delta 4), reused 0 (delta 0)\
+To git@github.com:HLK999/personal-site.git\
+   32d57d8..abfdb23  master -> master\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -am "Add Contact to Nav bar"\
+[master ffc9c5e] Add Contact to Nav bar\
+ 1 file changed, 1 insertion(+)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git push\
+Counting objects: 3, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 327 bytes | 0 bytes/s, done.\
+Total 3 (delta 2), reused 0 (delta 0)\
+To git@github.com:HLK999/personal-site.git\
+   abfdb23..ffc9c5e  master -> master\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ touch contact.html\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git add .\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -m "Create contact page"\
+[master b59004b] Create contact page\
+ 1 file changed, 1 insertion(+)\
+ create mode 100644 contact.html\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -am "Link to contact page"\
+[master 7a5055d] Link to contact page\
+ 1 file changed, 1 insertion(+), 1 deletion(-)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 2 commits.\
+  (use "git push" to publish your local commits)\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   contact.html\cf0 \
+	\cf3 modified:   styles.css\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git add contact.html \
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -m "Add home link to contact page"\
+[master 1372525] Add home link to contact page\
+ 1 file changed, 1 insertion(+)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git add .\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -m "Add link styles"\
+[master 8f509fd] Add link styles\
+ 1 file changed, 10 insertions(+)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ mkdir styles\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ mv styles.css styles/\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ touch styles/contact.css\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 4 commits.\
+  (use "git push" to publish your local commits)\
+Changes not staged for commit:\
+  (use "git add/rm <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   contact.html\cf0 \
+	\cf3 modified:   index.html\cf0 \
+	\cf3 deleted:    styles.css\cf0 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf3 styles/\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git diff contact.html \
+
+\f1\b diff --git a/contact.html b/contact.html
+\f0\b0 \
+
+\f1\b index 2493bd5..fe32ccd 100644
+\f0\b0 \
+
+\f1\b --- a/contact.html
+\f0\b0 \
+
+\f1\b +++ b/contact.html
+\f0\b0 \
+\cf4 @@ -1,2 +1,14 @@\cf0 \
+\cf3 -Hello; I am the contact page!\cf0 \
+\cf3 -<a href="index.html">Home</a>\cf0 \
+\cf2 +<!DOCTYPE html>\cf0 \
+\cf2 +<html lang="en">\cf0 \
+\cf2 +<head>\cf0 \
+\cf2 +    <meta charset="UTF-8">\cf0 \
+\cf2 +    <link rel="stylesheet" href="styles/styles.css">\cf0 \
+\cf2 +    <link rel="stylesheet" href="styles/contact.css">\cf0 \
+\cf2 +    <title>Contact</title>\cf0 \
+\cf2 +</head>\cf0 \
+\cf2 +<body>\cf0 \
+\cf2 +    Hope Lourie Killcoyne, NYC\cf0 \
+\cf2 +Photographer | Writer | Editor | Developer\cf0 \
+\cf2 +    <a href="index.html">Home</a>\cf0 \
+\cf2 +</body>\cf0 \
+\cf2 +</html>\cf0 \
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git add .\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 4 commits.\
+  (use "git push" to publish your local commits)\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf2 modified:   contact.html\cf0 \
+	\cf2 modified:   index.html\cf0 \
+	\cf2 new file:   styles/contact.css\cf0 \
+	\cf2 renamed:    styles.css -> styles/styles.css\cf0 \
+\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -m "Add separate style sheet for contact page"\
+[master d05d80d] Add separate style sheet for contact page\
+ 4 files changed, 20 insertions(+), 4 deletions(-)\
+ create mode 100644 styles/contact.css\
+ rename styles.css => styles/styles.css (95%)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 5 commits.\
+  (use "git push" to publish your local commits)\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   contact.html\cf0 \
+	\cf3 modified:   styles/contact.css\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git diff\
+
+\f1\b diff --git a/contact.html b/contact.html
+\f0\b0 \
+
+\f1\b index fe32ccd..32e8d7c 100644
+\f0\b0 \
+
+\f1\b --- a/contact.html
+\f0\b0 \
+
+\f1\b +++ b/contact.html
+\f0\b0 \
+\cf4 @@ -7,8 +7,14 @@\cf0 \
+     <title>Contact</title>\
+ </head>\
+ <body>\
+\cf3 -    Hope Lourie Killcoyne, NYC\cf0 \
+\cf3 -Photographer | Writer | Editor | Developer\cf0 \
+\cf3 -    <a href="index.html">Home</a>\cf0 \
+\cf2 +    <header>\cf0 \
+\cf2 +        <a href="index.html">Home</a>\cf0 \
+\cf2 +    </header>\cf0 \
+\cf2 +    <div id="contact-info">\cf0 \
+\cf2 +        <p>Hope Lourie Killcoyne, NYC</p>\cf0 \
+\cf2 +        <p>Photographer | Writer | Editor | Developer</p>\cf0 \
+\cf2 +        <p>hkillcoyne@gmail.com</p>\cf0 \
+\cf2 +    </div>\cf0 \
+\cf2 +    <footer><p>Rates for services available upon request.</p></footer>\cf0 \
+ </body>\
+ </html>\
+
+\f1\b diff --git a/styles/contact.css b/styles/contact.css
+\f0\b0 \
+
+\f1\b index 8660586..0bdd995 100644
+\f0\b0 \
+
+\f1\b --- a/styles/contact.css
+\f0\b0 \
+
+\f1\b +++ b/styles/contact.css
+\f0\b0 \
+\cf4 @@ -2,3 +2,24 @@\cf0  body \{\
+     background-color: grey;\
+     background-image: none;\
+ \}\
+\cf2 +\cf0 \
+\cf2 +header \{\cf0 \
+\cf2 +    text-align: center;\cf0 \
+\cf2 +    margin-top: 45px;\cf0 \
+\cf2 +    font-size: 30px;\cf0 \
+\cf2 +\}\cf0 \
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -am "Styling contact page"\
+[master d5067cd] Styling contact page\
+ 2 files changed, 30 insertions(+), 3 deletions(-)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 6 commits.\
+  (use "git push" to publish your local commits)\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   contact.html\cf0 \
+	\cf3 modified:   styles/contact.css\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git diff\
+
+\f1\b diff --git a/contact.html b/contact.html
+\f0\b0 \
+
+\f1\b index 32e8d7c..a5094f5 100644
+\f0\b0 \
+
+\f1\b --- a/contact.html
+\f0\b0 \
+
+\f1\b +++ b/contact.html
+\f0\b0 \
+\cf4 @@ -13,7 +13,7 @@\cf0 \
+     <div id="contact-info">\
+         <p>Hope Lourie Killcoyne, NYC</p>\
+         <p>Photographer | Writer | Editor | Developer</p>\
+\cf3 -        <p>hkillcoyne@gmail.com</p>\cf0 \
+\cf2 +        <p id="e-mail"><a href="mailto:hkillcoyne@gmail.com">hkillcoyne@gmail.com</a></p>\cf0 \
+     </div>\
+     <footer><p>Rates for services available upon request.</p></footer>\
+ </body>\
+
+\f1\b diff --git a/styles/contact.css b/styles/contact.css
+\f0\b0 \
+
+\f1\b index 0bdd995..9e4104c 100644
+\f0\b0 \
+
+\f1\b --- a/styles/contact.css
+\f0\b0 \
+
+\f1\b +++ b/styles/contact.css
+\f0\b0 \
+\cf4 @@ -17,6 +17,11 @@\cf0  header \{\
+     margin: 0;\
+ \}\
+ \
+\cf2 +#contact-info #e-mail \{\cf0 \
+\cf2 +    margin-top: 12px;\cf0 \
+\cf2 +    text-decoration: underline;\cf0 \
+\cf2 +\}\cf0 \
+\cf2 +\cf0 \
+ footer \{\
+     position: fixed;\
+     bottom: 20px;\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -am "Style e-mail link and make operative"\
+[master 47ea79a] Style e-mail link and make operative\
+ 2 files changed, 6 insertions(+), 1 deletion(-)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git push\
+Counting objects: 29, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (28/28), done.\
+Writing objects: 100% (29/29), 3.37 KiB | 0 bytes/s, done.\
+Total 29 (delta 14), reused 0 (delta 0)\
+To git@github.com:HLK999/personal-site.git\
+   ffc9c5e..47ea79a  master -> master\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is up-to-date with 'origin/master'.\
+Changes not staged for commit:\
+  (use "git add/rm <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 deleted:    images/silent_roar_bg.jpg\cf0 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf3 images/contact/\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git add .\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is up-to-date with 'origin/master'.\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf2 new file:   images/contact/AnneFrank.jpg\cf0 \
+	\cf2 new file:   images/contact/Atka.jpg\cf0 \
+	\cf2 new file:   images/contact/CivilRightsCover.jpg\cf0 \
+	\cf2 renamed:    images/silent_roar_bg.jpg -> images/contact/silent_roar.jpg\cf0 \
+\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -m "Add photos and book covers for contact page"\
+[master d79d376] Add photos and book covers for contact page\
+ 4 files changed, 0 insertions(+), 0 deletions(-)\
+ create mode 100644 images/contact/AnneFrank.jpg\
+ create mode 100644 images/contact/Atka.jpg\
+ create mode 100644 images/contact/CivilRightsCover.jpg\
+ rename images/\{silent_roar_bg.jpg => contact/silent_roar.jpg\} (100%)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git push\
+Counting objects: 7, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (7/7), done.\
+Writing objects: 100% (7/7), 3.90 MiB | 857.00 KiB/s, done.\
+Total 7 (delta 1), reused 0 (delta 0)\
+To git@github.com:HLK999/personal-site.git\
+   47ea79a..d79d376  master -> master\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is up-to-date with 'origin/master'.\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   contact.html\cf0 \
+	\cf3 modified:   styles/contact.css\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git diff\
+
+\f1\b diff --git a/contact.html b/contact.html
+\f0\b0 \
+
+\f1\b index a5094f5..a9fe794 100644
+\f0\b0 \
+
+\f1\b --- a/contact.html
+\f0\b0 \
+
+\f1\b +++ b/contact.html
+\f0\b0 \
+\cf4 @@ -15,6 +15,7 @@\cf0 \
+         <p>Photographer | Writer | Editor | Developer</p>\
+         <p id="e-mail"><a href="mailto:hkillcoyne@gmail.com">hkillcoyne@gmail.com</a></p>\
+     </div>\
+\cf3 -    <footer><p>Rates for services available upon request.</p></footer>\cf0 \
+\cf2 +    <img src="images/contact/AnneFrank.jpg" alt="AnneFrank" height="350px" width="350px">\cf0 \
+\cf2 +    <footer>Rates for services available upon request.</footer>\cf0 \
+ </body>\
+ </html>\
+
+\f1\b diff --git a/styles/contact.css b/styles/contact.css
+\f0\b0 \
+
+\f1\b index 9e4104c..ff61d9f 100644
+\f0\b0 \
+
+\f1\b --- a/styles/contact.css
+\f0\b0 \
+
+\f1\b +++ b/styles/contact.css
+\f0\b0 \
+\cf4 @@ -1,15 +1,16 @@\cf0 \
+ body \{\
+     background-color: grey;\
+     background-image: none;\
+\cf2 +    text-align: center;\cf0 \
+ \}\
+ \
+ header \{\
+\cf3 -    text-align: center;\cf0 \
+     margin-top: 45px;\
+     font-size: 30px;\
+ \}\
+ \
+ #contact-info \{\
+\cf2 +    text-align: left;\cf0 \
+     margin-left: 50px;\
+ \}\
+ \
+\cf4 @@ -24,7 +25,6 @@\cf0  header \{\
+ \
+ footer \{\
+     position: fixed;\
+\cf3 -    bottom: 20px;\cf0 \
+\cf3 -    text-align: center;\cf0 \
+\cf2 +    bottom: 40px;\cf0 \
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -am 'Change default to text-align: center; on contact page'\
+[master dd0fd5c] Change default to text-align: center; on contact page\
+ 2 files changed, 5 insertions(+), 4 deletions(-)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git push\
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (5/5), done.\
+Writing objects: 100% (5/5), 617 bytes | 0 bytes/s, done.\
+Total 5 (delta 3), reused 0 (delta 0)\
+To git@github.com:HLK999/personal-site.git\
+   d79d376..dd0fd5c  master -> master\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -am "Change opacity for newly added box shadow"\
+[master ea07aaf] Change opacity for newly added box shadow\
+ 1 file changed, 8 insertions(+)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ mkdir js\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ touch js/main.js\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ cp ~/WDI/Libraries_and_Frameworks/jquery.min.js js/\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git add .\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -m "Import jquery file; create js file"\
+[master c8229b3] Import jquery file; create js file\
+ 2 files changed, 4 insertions(+)\
+ create mode 100644 js/jquery.min.js\
+ create mode 100644 js/main.js\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 2 commits.\
+  (use "git push" to publish your local commits)\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   contact.html\cf0 \
+	\cf3 modified:   js/main.js\cf0 \
+	\cf3 modified:   styles/contact.css\cf0 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf3 js/complete_fades.js\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git add .\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -m "Set up images to fade in and out"\
+[master 1c11aa8] Set up images to fade in and out\
+ 4 files changed, 73 insertions(+), 2 deletions(-)\
+ create mode 100644 js/complete_fades.js\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git push\
+Counting objects: 17, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (16/16), done.\
+Writing objects: 100% (17/17), 34.81 KiB | 0 bytes/s, done.\
+Total 17 (delta 6), reused 0 (delta 0)\
+To git@github.com:HLK999/personal-site.git\
+   dd0fd5c..1c11aa8  master -> master\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ \
+}
