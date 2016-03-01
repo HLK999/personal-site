@@ -1,0 +1,46 @@
+body {
+    background-color: grey;
+    background-image: none;
+    text-align: center;
+}
+
+header {
+    margin-top: 45px;
+    font-size: 30px;
+}
+
+#contact-info {
+    text-align: left;
+    margin-left: 50px;
+}
+
+#contact-info p {
+    margin: 0;
+}
+
+#contact-info #e-mail {
+    margin-top: 12px;
+    text-decoration: underline;
+}
+
+#images {
+    height: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    position: relative;
+    opacity: 0;
+    display: none;
+    border-radius: 5px;
+    -moz-box-shadow: 5px 5px 5px #555555;
+    -webkit-box-shadow: 5px 5px 5px #555555;
+    box-shadow: 5px 5px 5px #555555;
+}
+
+footer {
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
+}
