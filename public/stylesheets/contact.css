@@ -4,14 +4,14 @@ body {
     text-align: center;
 }
 
-header {
-    margin-top: 45px;
-    font-size: 30px;
+nav {
+    background-color: rgba(240,229,182,0.1);
 }
 
 #contact-info {
     text-align: left;
     margin-left: 50px;
+    margin-top: 30px;
 }
 
 #contact-info p {
