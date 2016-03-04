@@ -1,5 +1,9 @@
 body {
-    background-color: grey;
+    background-color: #FCFCFC;
     background-image: none;
     text-align: center;
+}
+
+h1 {
+    font-weight: lighter;
 }
