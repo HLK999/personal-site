@@ -1,0 +1,353 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red47\green180\blue29;\red180\green36\blue25;\red46\green174\blue187;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 Last login: Tue Mar  1 12:18:45 on ttys000\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   views/index.erb\cf0 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf3 stylesheets/\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git add -A\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -m 'add views html'\
+[master e15bc97] add views html\
+ 3 files changed, 70 insertions(+), 39 deletions(-)\
+ create mode 100644 stylesheets/contact.css\
+ create mode 100644 stylesheets/photo_gallery.css\
+ rewrite views/index.erb (100%)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ ls\
+1.22.16_bash_personal_site.rtf		Personal Site Bash closed 2.17.16.rtf	config.ru				views\
+2.17.16PersonalSiteBashTerminal.rtf	README.md				connection.rb\
+Gemfile					Rakefile				public\
+Gemfile.lock				app.rb					stylesheets\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git rm stylesheets/\
+fatal: not removing 'stylesheets/' recursively without -r\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git rm -r stylesheets/\
+rm 'stylesheets/contact.css'\
+rm 'stylesheets/photo_gallery.css'\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 2 commits.\
+  (use "git push" to publish your local commits)\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf2 deleted:    stylesheets/contact.css\cf0 \
+	\cf2 deleted:    stylesheets/photo_gallery.css\cf0 \
+\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -m 'delete duplicate stylesheets folder'\
+[master e0d81de] delete duplicate stylesheets folder\
+ 2 files changed, 51 deletions(-)\
+ delete mode 100644 stylesheets/contact.css\
+ delete mode 100644 stylesheets/photo_gallery.css\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git push\
+Counting objects: 11, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (11/11), done.\
+Writing objects: 100% (11/11), 1.39 KiB | 0 bytes/s, done.\
+Total 11 (delta 5), reused 0 (delta 0)\
+To git@github.com:HLK999/personal-site.git\
+   4b23e51..e0d81de  master -> master\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is up-to-date with 'origin/master'.\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   views/layout.erb\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -am 'link to stylesheet from layout'\
+[master 1ba646b] link to stylesheet from layout\
+ 1 file changed, 1 insertion(+)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   app.rb\cf0 \
+	\cf3 modified:   public/stylesheets/contact.css\cf0 \
+	\cf3 modified:   views/contact.erb\cf0 \
+	\cf3 modified:   views/layout.erb\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git diff\
+
+\f1\b diff --git a/app.rb b/app.rb
+\f0\b0 \
+
+\f1\b index 327616d..28adf5c 100644
+\f0\b0 \
+
+\f1\b --- a/app.rb
+\f0\b0 \
+
+\f1\b +++ b/app.rb
+\f0\b0 \
+\cf4 @@ -6,3 +6,7 @@\cf0  require_relative 'connection'\
+ get '/' do\
+     erb :index\
+ end\
+\cf2 +\cf0 \
+\cf2 +get '/contact' do\cf0 \
+\cf2 +    erb :contact\cf0 \
+\cf2 +end\cf0 \
+
+\f1\b diff --git a/public/stylesheets/contact.css b/public/stylesheets/contact.css
+\f0\b0 \
+
+\f1\b index 5e980f6..3c1c181 100644
+\f0\b0 \
+
+\f1\b --- a/public/stylesheets/contact.css
+\f0\b0 \
+
+\f1\b +++ b/public/stylesheets/contact.css
+\f0\b0 \
+\cf4 @@ -4,14 +4,14 @@\cf0  body \{\
+     text-align: center;\
+ \}\
+ \
+\cf3 -header \{\cf0 \
+\cf3 -    margin-top: 45px;\cf0 \
+\cf3 -    font-size: 30px;\cf0 \
+\cf2 +nav \{\cf0 \
+\cf2 +    background-color: rgba(240,229,182,0.1);\cf0 \
+ \}\
+ \
+ #contact-info \{\
+     text-align: left;\
+     margin-left: 50px;\
+\cf2 +    margin-top: 30px;\cf0 \
+ \}\
+ \
+ #contact-info p \{\
+
+\f1\b diff --git a/views/contact.erb b/views/contact.erb
+\f0\b0 \
+
+\f1\b index 1132465..11289f9 100644
+\f0\b0 \
+
+\f1\b --- a/views/contact.erb
+\f0\b0 \
+
+\f1\b +++ b/views/contact.erb
+\f0\b0 \
+\cf4 @@ -1,28 +1,13 @@\cf0 \
+\cf3 -<!DOCTYPE html>\cf0 \
+\cf3 -<html lang="en">\cf0 \
+\cf3 -<head>\cf0 \
+\cf3 -    <meta charset="UTF-8">\cf0 \
+\cf3 -    <link rel="stylesheet" href="styles/styles.css">\cf0 \
+\cf3 -    <link rel="stylesheet" href="styles/contact.css">\cf0 \
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git add app.rb \
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -m 'add contact route'\
+[master 3253d92] add contact route\
+ 1 file changed, 4 insertions(+)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 2 commits.\
+  (use "git push" to publish your local commits)\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   public/stylesheets/contact.css\cf0 \
+	\cf3 modified:   views/contact.erb\cf0 \
+	\cf3 modified:   views/layout.erb\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git add public/.\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -m 'Style contact page'\
+[master 5043f52] Style contact page\
+ 1 file changed, 3 insertions(+), 3 deletions(-)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git diff views/layout.erb \
+
+\f1\b diff --git a/views/layout.erb b/views/layout.erb
+\f0\b0 \
+
+\f1\b index 239a777..702222b 100644
+\f0\b0 \
+
+\f1\b --- a/views/layout.erb
+\f0\b0 \
+
+\f1\b +++ b/views/layout.erb
+\f0\b0 \
+\cf4 @@ -13,7 +13,7 @@\cf0 \
+             <li>Writings</li>\
+             <li>Openings</li>\
+             <li>Other Events</li>\
+\cf3 -            <li><a href="contact.html">Contact</a></li>\cf0 \
+\cf2 +            <li><a href="/contact">Contact</a></li>\cf0 \
+         </ul>\
+     </nav>\
+ \
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git add views/layout.erb \
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -m 'Change main nav link for Sinatra'\
+[master b7c98aa] Change main nav link for Sinatra\
+ 1 file changed, 1 insertion(+), 1 deletion(-)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git diff\
+
+\f1\b diff --git a/views/contact.erb b/views/contact.erb
+\f0\b0 \
+
+\f1\b index 1132465..11289f9 100644
+\f0\b0 \
+
+\f1\b --- a/views/contact.erb
+\f0\b0 \
+
+\f1\b +++ b/views/contact.erb
+\f0\b0 \
+\cf4 @@ -1,28 +1,13 @@\cf0 \
+\cf3 -<!DOCTYPE html>\cf0 \
+\cf3 -<html lang="en">\cf0 \
+\cf3 -<head>\cf0 \
+\cf3 -    <meta charset="UTF-8">\cf0 \
+\cf3 -    <link rel="stylesheet" href="styles/styles.css">\cf0 \
+\cf3 -    <link rel="stylesheet" href="styles/contact.css">\cf0 \
+\cf3 -    <script src="js/jquery.min.js"></script>\cf0 \
+\cf3 -    <script src="js/complete_fades.js"></script>\cf0 \
+\cf3 -    <title>Contact</title>\cf0 \
+\cf3 -</head>\cf0 \
+\cf3 -<body>\cf0 \
+\cf3 -    <header>\cf0 \
+\cf3 -        <a href="index.html">Home</a>\cf0 \
+\cf3 -    </header>\cf0 \
+\cf3 -    <div id="contact-info">\cf0 \
+\cf3 -        <p>Hope Lourie Killcoyne, NYC</p>\cf0 \
+\cf3 -        <p>Photographer | Writer | Editor | Developer</p>\cf0 \
+\cf3 -        <p id="e-mail"><a href="mailto:hkillcoyne@gmail.com">hkillcoyne@gmail.com</a></p>\cf0 \
+\cf3 -    </div>\cf0 \
+\cf3 -    <div id="images">\cf0 \
+\cf3 -        <img src="images/contact/AnneFrank.jpg" alt="AnneFrank" height="350px" width="350px">\cf0 \
+\cf3 -        <img src="images/contact/Atka.jpg" alt="Atka" height="350px" width="350px">\cf0 \
+\cf3 -        <img src="images/contact/CivilRightsCover.jpg" alt="CivilRightsCover" height="350px" width="350px">\cf0 \
+\cf3 -        <img src="images/contact/silent_roar.jpg" alt="silent_roar" height="350px" width="350px">\cf0 \
+\cf3 -    </div>\cf0 \
+\cf3 -    <footer>Rates for services available upon request.</footer>\cf0 \
+\cf3 -</body>\cf0 \
+\cf3 -</html>\cf0 \
+\cf2 +<link rel="stylesheet" href="stylesheets/contact.css">\cf0 \
+\cf2 +<div id="contact-info">\cf0 \
+\cf2 +    <p>Hope Lourie Killcoyne, NYC</p>\cf0 \
+\cf2 +    <p>Photographer | Writer | Editor | Developer</p>\cf0 \
+\cf2 +    <p id="e-mail"><a href="mailto:hkillcoyne@gmail.com">hkillcoyne@gmail.com</a></p>\cf0 \
+\cf2 +</div>\cf0 \
+\cf2 +<div id="images">\cf0 \
+\cf2 +    <img src="images/contact/AnneFrank.jpg" alt="AnneFrank" height="350px" width="350px">\cf0 \
+\cf2 +    <img src="images/contact/Atka.jpg" alt="Atka" height="350px" width="350px">\cf0 \
+\cf2 +    <img src="images/contact/CivilRightsCover.jpg" alt="CivilRightsCover" height="350px" width="350px">\cf0 \
+\cf2 +    <img src="images/contact/silent_roar.jpg" alt="silent_roar" height="350px" width="350px">\cf0 \
+\cf2 +</div>\cf0 \
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -am 'Rewrite contact page for sinatra'\
+[master c3f0076] Rewrite contact page for sinatra\
+ 1 file changed, 13 insertions(+), 28 deletions(-)\
+ rewrite views/contact.erb (97%)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 5 commits.\
+  (use "git push" to publish your local commits)\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   views/contact.erb\cf0 \
+	\cf3 modified:   views/layout.erb\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git add views/layout.erb \
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -m "Link to jQuery from layout"\
+[master cab5c7a] Link to jQuery from layout\
+ 1 file changed, 1 insertion(+)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -am "Link to contact JS carousel"\
+[master 3c77afd] Link to contact JS carousel\
+ 1 file changed, 1 insertion(+)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 7 commits.\
+  (use "git push" to publish your local commits)\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   public/stylesheets/contact.css\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -am 'Tweak contact page styles'\
+[master 23c427e] Tweak contact page styles\
+ 1 file changed, 3 insertions(+), 2 deletions(-)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git push\
+Counting objects: 33, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (33/33), done.\
+Writing objects: 100% (33/33), 3.16 KiB | 0 bytes/s, done.\
+Total 33 (delta 21), reused 0 (delta 0)\
+To git@github.com:HLK999/personal-site.git\
+   e0d81de..23c427e  master -> master\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ \
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is up-to-date with 'origin/master'.\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   app.rb\cf0 \
+	\cf3 modified:   views/layout.erb\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git add app.rb \
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -am "Add photo_gallery route"\
+[master a549a62] Add photo_gallery route\
+ 2 files changed, 5 insertions(+), 1 deletion(-)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+nothing to commit, working directory clean\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   views/photo_gallery.erb\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git commit -am 'Remove redundant photo_gallery view code'\
+[master 3255c21] Remove redundant photo_gallery view code\
+ 1 file changed, 5 insertions(+), 17 deletions(-)\
+ rewrite views/photo_gallery.erb (100%)\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ git push\
+Counting objects: 9, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (9/9), done.\
+Writing objects: 100% (9/9), 890 bytes | 0 bytes/s, done.\
+Total 9 (delta 6), reused 0 (delta 0)\
+To git@github.com:HLK999/personal-site.git\
+   23c427e..3255c21  master -> master\
+hope@hopekillcoyne personal-site\cf2  (master)\cf0  $ \
+}
