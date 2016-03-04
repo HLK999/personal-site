@@ -7,3 +7,13 @@ body {
 h1 {
     font-weight: lighter;
 }
+
+#main-carousel {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+#main-carousel img {
+    height: 100%;
+}
