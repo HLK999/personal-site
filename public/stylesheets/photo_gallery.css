@@ -4,8 +4,8 @@ body {
     text-align: center;
 }
 
-h1 {
-    font-weight: lighter;
+nav {
+    background-color: rgba(240,229,182,0.1);
 }
 
 #main-carousel {
@@ -16,4 +16,8 @@ h1 {
 
 #main-carousel img {
     height: 100%;
+}
+
+h4 {
+    font-weight: lighter;
 }
