@@ -49,6 +49,7 @@ h4 {
 
 #galleries img {
     width: 200px;
+    cursor: pointer;
 }
 
 #galleries p {
